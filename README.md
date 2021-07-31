@@ -11,6 +11,6 @@ example let arr = [{ "eventId": "1", "name": "name_a", "isCancelled": "true"},
 **Solution 1:-**
 let tempobj={}
 for(let currentobj of arr){
- tempobj[currentobj["eventId"]]={...(tempobj[currentobj["eventId"]]||{}),currentobj};
+ tempobj[currentobj["eventId"]]={...(tempobj[currentobj["eventId"]]||{}),...currentobj};
 }
 
